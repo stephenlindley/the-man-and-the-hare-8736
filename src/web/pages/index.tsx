@@ -281,7 +281,14 @@ function Index() {
         <footer className="py-12 px-6 text-center">
           <div className="h-px bg-gradient-to-r from-transparent via-[#8b5a2b]/20 to-transparent mb-8" />
           <p className="text-[#8b7355] text-xs tracking-wider">
-            © 2025 Stephen Lindley. All rights reserved.
+            © 2025{" "}
+            <a 
+              href="mailto:stephenlindley@btinternet.com" 
+              className="hover:text-[#babb99] transition-colors"
+            >
+              Stephen Lindley
+            </a>
+            . All rights reserved.
           </p>
         </footer>
       </main>
