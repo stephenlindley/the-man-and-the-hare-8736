@@ -57,12 +57,18 @@ function Index() {
             <img 
               src="./hero-background.jpg" 
               alt="" 
-              className="absolute inset-0 w-full h-[120%] object-cover object-right md:object-center will-change-transform"
+              className="hero-bg-img absolute inset-0 w-full h-[120%] object-cover will-change-transform"
               style={{
                 transform: `translateY(${scrollY * 0.4}px)`,
                 top: '-10%',
+                objectPosition: 'right center',
               }}
             />
+            <style>{`
+              @media (min-width: 768px) {
+                .hero-bg-img { object-position: center center !important; }
+              }
+            `}</style>
             
             {/* Dark overlay gradient for text readability - lightened to show more background */}
             <div className="absolute inset-0 bg-gradient-to-b from-[#0a0908]/40 via-[#0a0908]/25 to-[#0a0908]/70" />
