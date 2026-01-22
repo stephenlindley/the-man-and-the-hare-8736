@@ -284,7 +284,7 @@ function Index() {
             © 2025{" "}
             <a 
               href="mailto:stephenlindley@btinternet.com" 
-              className="hover:text-[#babb99] transition-colors"
+              className="hover:text-[#ecedd1] hover:underline decoration-[#c9a959]/50 underline-offset-2 transition-colors"
             >
               Stephen Lindley
             </a>
