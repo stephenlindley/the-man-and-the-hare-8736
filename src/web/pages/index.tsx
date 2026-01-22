@@ -92,11 +92,11 @@ function Index() {
 
             {/* Title */}
             <h1 className="font-serif leading-[0.9] mb-4" style={{ fontFamily: "'Cinzel', serif" }}>
-              <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] tracking-[0.08em] font-normal text-transparent bg-clip-text bg-gradient-to-b from-[#d4af37] via-[#c9a959] to-[#8b6914] drop-shadow-[0_0_40px_rgba(201,169,89,0.25)]">
+              <span className="block text-5xl sm:text-5xl md:text-6xl lg:text-[7.5rem] tracking-[0.08em] font-normal text-[#ecedd1] drop-shadow-[0_0_40px_rgba(201,169,89,0.25)]">
                 THE MAN
               </span>
-              <span className="block text-[#e8e4dc]/60 text-2xl sm:text-3xl md:text-4xl my-4 tracking-[0.6em] font-light">&</span>
-              <span className="block text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] tracking-[0.08em] font-normal text-transparent bg-clip-text bg-gradient-to-b from-[#d4af37] via-[#c9a959] to-[#8b6914] drop-shadow-[0_0_40px_rgba(201,169,89,0.25)]">
+              <span className="block text-[#e8e4dc]/60 text-xl sm:text-2xl md:text-3xl my-4 tracking-[0.6em] font-light">&</span>
+              <span className="block text-5xl sm:text-5xl md:text-6xl lg:text-[7.5rem] tracking-[0.08em] font-normal text-[#ecedd1] drop-shadow-[0_0_40px_rgba(201,169,89,0.25)]">
                 THE HARE
               </span>
             </h1>
