@@ -45,17 +45,17 @@ function Index() {
               className="absolute inset-0 w-full h-full object-cover object-center"
             />
             
-            {/* Dark overlay gradient for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#0a0908]/70 via-[#0a0908]/50 to-[#0a0908]/90" />
+            {/* Dark overlay gradient for text readability - lightened to show more background */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0a0908]/40 via-[#0a0908]/25 to-[#0a0908]/70" />
             
-            {/* Additional radial overlay to enhance center text area */}
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(10,9,8,0.3)_0%,rgba(10,9,8,0.6)_50%,rgba(10,9,8,0.85)_100%)]" />
+            {/* Additional radial overlay to enhance center text area - lightened */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(10,9,8,0.15)_0%,rgba(10,9,8,0.35)_50%,rgba(10,9,8,0.6)_100%)]" />
             
             {/* Subtle golden atmospheric glow */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(201,169,89,0.08)_0%,transparent_50%)]" />
             
-            {/* Bottom fade to match page background */}
-            <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-[#0a0908] via-[#0a0908]/80 to-transparent" />
+            {/* Bottom fade to match page background - lightened */}
+            <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[#0a0908] via-[#0a0908]/60 to-transparent" />
           </div>
           <div 
             className={`relative z-10 max-w-5xl mx-auto text-center transition-all duration-1500 ease-out ${
