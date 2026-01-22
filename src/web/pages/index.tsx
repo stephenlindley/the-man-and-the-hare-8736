@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const BookStar = () => (
   <svg className="w-5 h-5 fill-amber-400" viewBox="0 0 24 24">
@@ -8,9 +8,24 @@ const BookStar = () => (
 
 function Index() {
   const [isVisible, setIsVisible] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+  const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setIsVisible(true);
+
+    const handleScroll = () => {
+      if (heroRef.current) {
+        const rect = heroRef.current.getBoundingClientRect();
+        // Only update parallax when hero is in view
+        if (rect.bottom > 0) {
+          setScrollY(window.scrollY);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -35,14 +50,18 @@ function Index() {
       {/* Main content */}
       <main className="relative z-10">
         {/* Hero Section */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-20 relative">
-          {/* Hero background image */}
+        <section ref={heroRef} className="min-h-screen flex flex-col items-center justify-center px-6 py-20 relative">
+          {/* Hero background image with parallax */}
           <div className="absolute inset-0 overflow-hidden">
             {/* Background image of Celtic standing stones */}
             <img 
               src="./hero-background.jpg" 
               alt="" 
-              className="absolute inset-0 w-full h-full object-cover object-center"
+              className="absolute inset-0 w-full h-[120%] object-cover object-center will-change-transform"
+              style={{
+                transform: `translateY(${scrollY * 0.4}px)`,
+                top: '-10%',
+              }}
             />
             
             {/* Dark overlay gradient for text readability - lightened to show more background */}
