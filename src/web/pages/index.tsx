@@ -36,51 +36,26 @@ function Index() {
       <main className="relative z-10">
         {/* Hero Section */}
         <section className="min-h-screen flex flex-col items-center justify-center px-6 py-20 relative">
-          {/* Atmospheric hero background */}
+          {/* Hero background image */}
           <div className="absolute inset-0 overflow-hidden">
-            {/* Mystical landscape gradient */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#1a1510] via-[#0d1210] to-[#0a0908]" />
+            {/* Background image of Celtic standing stones */}
+            <img 
+              src="./hero-background.png" 
+              alt="" 
+              className="absolute inset-0 w-full h-full object-cover object-center"
+            />
             
-            {/* Ethereal dawn light rays */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[200%] h-[70%] opacity-20">
-              <div className="absolute inset-0 bg-[conic-gradient(from_270deg_at_50%_0%,transparent_0deg,rgba(201,169,89,0.15)_10deg,transparent_20deg,transparent_70deg,rgba(139,90,43,0.1)_80deg,transparent_90deg,transparent_140deg,rgba(76,102,76,0.08)_150deg,transparent_160deg)]" />
-            </div>
+            {/* Dark overlay gradient for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0a0908]/70 via-[#0a0908]/50 to-[#0a0908]/90" />
             
-            {/* Standing stones silhouettes */}
-            <div className="absolute bottom-0 left-0 right-0 h-64 opacity-30">
-              <svg className="w-full h-full" viewBox="0 0 1200 256" preserveAspectRatio="xMidYMax slice">
-                <defs>
-                  <linearGradient id="stoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#2a2520" />
-                    <stop offset="100%" stopColor="#0a0908" />
-                  </linearGradient>
-                </defs>
-                {/* Distant stones */}
-                <path d="M0 256 L0 200 Q10 180 20 200 L20 256 Z" fill="url(#stoneGrad)" opacity="0.5" />
-                <path d="M80 256 L80 150 Q95 120 110 150 L110 256 Z" fill="url(#stoneGrad)" opacity="0.6" />
-                <path d="M200 256 L200 130 Q220 90 240 130 L240 256 Z" fill="url(#stoneGrad)" opacity="0.7" />
-                <path d="M350 256 L355 100 Q370 60 385 100 L390 256 Z" fill="url(#stoneGrad)" opacity="0.8" />
-                <path d="M500 256 L505 80 Q525 30 545 80 L550 256 Z" fill="url(#stoneGrad)" />
-                <path d="M650 256 L655 110 Q675 70 695 110 L700 256 Z" fill="url(#stoneGrad)" opacity="0.8" />
-                <path d="M800 256 L805 140 Q820 110 835 140 L840 256 Z" fill="url(#stoneGrad)" opacity="0.7" />
-                <path d="M950 256 L950 160 Q965 130 980 160 L980 256 Z" fill="url(#stoneGrad)" opacity="0.6" />
-                <path d="M1080 256 L1080 180 Q1095 150 1110 180 L1110 256 Z" fill="url(#stoneGrad)" opacity="0.5" />
-                <path d="M1150 256 L1150 210 Q1160 190 1170 210 L1170 256 Z" fill="url(#stoneGrad)" opacity="0.4" />
-              </svg>
-            </div>
+            {/* Additional radial overlay to enhance center text area */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(10,9,8,0.3)_0%,rgba(10,9,8,0.6)_50%,rgba(10,9,8,0.85)_100%)]" />
             
-            {/* Ground mist */}
-            <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[#1a1815]/90 via-[#15120f]/40 to-transparent" />
+            {/* Subtle golden atmospheric glow */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(201,169,89,0.08)_0%,transparent_50%)]" />
             
-            {/* Floating mist particles */}
-            <div className="absolute inset-0 opacity-40">
-              <div className="absolute w-96 h-32 bg-[#8b7355]/10 rounded-full blur-3xl top-[60%] left-[10%] animate-pulse" style={{ animationDuration: '8s' }} />
-              <div className="absolute w-64 h-24 bg-[#4a5a4a]/10 rounded-full blur-3xl top-[70%] right-[20%] animate-pulse" style={{ animationDuration: '12s', animationDelay: '4s' }} />
-              <div className="absolute w-80 h-28 bg-[#a88f6a]/10 rounded-full blur-3xl top-[55%] left-[50%] animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
-            </div>
-            
-            {/* Vignette overlay for text readability */}
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(10,9,8,0.4)_50%,rgba(10,9,8,0.8)_100%)]" />
+            {/* Bottom fade to match page background */}
+            <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-[#0a0908] via-[#0a0908]/80 to-transparent" />
           </div>
           <div 
             className={`relative z-10 max-w-5xl mx-auto text-center transition-all duration-1500 ease-out ${
