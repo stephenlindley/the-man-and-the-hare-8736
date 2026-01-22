@@ -109,7 +109,7 @@ function Index() {
 
             {/* Subtitle */}
             <p 
-              className={`text-lg sm:text-xl md:text-2xl text-[#a88f6a] italic tracking-wide mt-6 mb-4 transition-all duration-1500 delay-300 ${
+              className={`text-lg sm:text-xl md:text-2xl text-[#babb99] italic tracking-wide mt-6 mb-4 transition-all duration-1500 delay-300 ${
                 isVisible ? 'opacity-100' : 'opacity-0'
               }`}
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
@@ -119,7 +119,7 @@ function Index() {
 
             {/* Author */}
             <p 
-              className={`text-sm sm:text-base tracking-[0.3em] uppercase text-[#8b7355] mt-8 transition-all duration-1500 delay-500 ${
+              className={`text-sm sm:text-base tracking-[0.3em] uppercase text-[#babb99] mt-8 transition-all duration-1500 delay-500 ${
                 isVisible ? 'opacity-100' : 'opacity-0'
               }`}
             >
@@ -133,7 +133,7 @@ function Index() {
               }`}
             >
               <BookStar /><BookStar /><BookStar /><BookStar /><BookStar />
-              <span className="ml-2 text-[#a88f6a] text-sm">5.0 / 5</span>
+              <span className="ml-2 text-[#babb99] text-sm">5.0 / 5</span>
             </div>
 
             {/* CTA */}
