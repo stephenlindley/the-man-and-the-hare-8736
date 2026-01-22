@@ -40,7 +40,7 @@ function Index() {
           <div className="absolute inset-0 overflow-hidden">
             {/* Background image of Celtic standing stones */}
             <img 
-              src="./hero-background.png" 
+              src="./hero-background.jpg" 
               alt="" 
               className="absolute inset-0 w-full h-full object-cover object-center"
             />
