@@ -65,7 +65,7 @@ function Index() {
               }}
             />
             <style>{`
-              @media (min-width: 1024px) {
+              @media (min-width: 1200px) {
                 .hero-bg-img { object-position: center center !important; }
               }
             `}</style>
