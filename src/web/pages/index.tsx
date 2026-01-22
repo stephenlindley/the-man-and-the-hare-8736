@@ -164,7 +164,7 @@ function Index() {
           
           <div className="max-w-3xl mx-auto">
             <h2 
-              className="text-center text-2xl sm:text-3xl text-[#c9a959] mb-16 tracking-wider"
+              className="text-center text-2xl sm:text-3xl text-[#ecedd1] mb-16 tracking-wider"
               style={{ fontFamily: "'Cinzel', serif" }}
             >
               The Story
@@ -205,7 +205,7 @@ function Index() {
           
           <div className="max-w-4xl mx-auto">
             <h2 
-              className="text-center text-2xl sm:text-3xl text-[#c9a959] mb-16 tracking-wider"
+              className="text-center text-2xl sm:text-3xl text-[#ecedd1] mb-16 tracking-wider"
               style={{ fontFamily: "'Cinzel', serif" }}
             >
               Book Details
@@ -233,7 +233,7 @@ function Index() {
           
           <div className="max-w-2xl mx-auto text-center">
             <h2 
-              className="text-2xl sm:text-3xl text-[#c9a959] mb-8 tracking-wider"
+              className="text-2xl sm:text-3xl text-[#ecedd1] mb-8 tracking-wider"
               style={{ fontFamily: "'Cinzel', serif" }}
             >
               About the Author
