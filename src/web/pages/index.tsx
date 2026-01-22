@@ -57,7 +57,7 @@ function Index() {
             <img 
               src="./hero-background.jpg" 
               alt="" 
-              className="absolute inset-0 w-full h-[120%] object-cover object-center will-change-transform"
+              className="absolute inset-0 w-full h-[120%] object-cover object-right md:object-center will-change-transform"
               style={{
                 transform: `translateY(${scrollY * 0.4}px)`,
                 top: '-10%',
